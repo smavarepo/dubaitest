@@ -1,0 +1,20 @@
+---
+
+#- copy:
+#    src: /usr/local/.jenkins/jobs/Nginx-Server-Deploy/workspace/iptables-nginx
+#    dest: /etc/init.d/
+#    owner: root
+#    group: root
+#    mode: 777
+
+
+#    src:  /usr/local/.jenkins/jobs/Nginx-Server-Deploy/workspace/setforwarding
+#    dest: /tmp/
+#    owner: root
+#    group: root
+#    mode: 777
+- debug:
+    verbosity: 4
+- name: Deploy war file
+- command:  scp -r /root/*.war 172.17.0.3:/opt/jetty/webapps/
+

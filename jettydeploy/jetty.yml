@@ -1,0 +1,6 @@
+---
+#jetty
+- name: deploying war in jetty
+  hosts: jettyserver
+  roles:
+    - { role: jetty }
