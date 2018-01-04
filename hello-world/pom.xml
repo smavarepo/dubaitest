@@ -6,8 +6,6 @@
 	<version>0.0.1-SNAPSHOT</version>
 	<packaging>war</packaging>
 	<description>Sample project</description>
-<plugin>
-    <artifactId>maven-antrun-plugin</artifactId>
     <executions>
         <execution>
             <phase>generate-resources</phase>
@@ -21,7 +19,6 @@
             </configuration>
         </execution>
     </executions>
-</plugin>
 
 	<parent>
 		<groupId>org.springframework.boot</groupId>
